@@ -18,7 +18,7 @@
 
                     <!-- login form -->
                     <form class="w-full text-center p-5">
-                        <div class="bg-white rounded-lg p-5">
+                        <div class="bg-white rounded-2xl p-5">
                             <!-- <div>
                                 <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                             </div> -->
@@ -26,16 +26,16 @@
                                 <label class="label">
                                   <span class="label-text font-bold">Mobile Number</span>
                                 </label>
-                                <input type="text" placeholder="Enter your number" class="input input-bordered" required />
+                                <input id="phone-number" type="text" placeholder="Enter your number" class="input input-bordered" required />
                               </div>
                               <div class="form-control">
                                 <label class="label">
                                   <span class="label-text font-bold">4 Digit Pin</span>
                                 </label>
-                                <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                                <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required autocomplete="off" />
                               </div>
                               <div class="form-control mt-6">
-                                <button class="btn bg-[#0874F2] text-white">Login</button>
+                                <button id="btn-login" class="btn bg-[#0874F2] text-white">Login</button>
                               </div>
                         </div>
                     </form>
@@ -43,6 +43,10 @@
             </div>
         </div>
     </main>
+    <script src="js/login.js"></script>
+    <script>
+      
+    </script>
 </body>
 
 
