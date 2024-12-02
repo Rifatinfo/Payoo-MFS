@@ -19,9 +19,9 @@
                         <img class="w-14 h-14" src="img/green_eco_loop_leaf_check_mark.jpg" alt="">
                     </div>
                     <div>
-                        <p class="text-3xl font-bold">$<span>8542</span></p>
+                        <p class="text-3xl font-bold">$<span id="current-balance">10</span></p>
                         <p class="text-xl text-gray-500">Available Balance</p>
-                    </div>
+                    </div>    
                 </div>
                 <div>
                     <button class="btn">
@@ -71,7 +71,11 @@
                 </div>
 
                 <!-- addMoney   -->
-                <form class="w-full text-center p-5">
+                 
+                <form class="hidden w-full text-center p-5">
+                    <div>
+                        <p class="text-2xl font-bold">Add Money</p>
+                     </div>
                     <div class="bg-white rounded-2xl p-2">
                         <label class="label">
                             <span class="label-text  text-lg font-medium">Select A Bank</span>
@@ -107,10 +111,44 @@
                         </div>
                     </div>
                 </form>
+
+                <!-- cashOut -->
+                <form class="w-full text-center p-5">
+                    <div>
+                        <p class="text-2xl font-bold">Cash Out</p>
+                     </div>
+                    <div class="bg-white rounded-2xl p-2">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text  text-lg font-medium">Agent Number</span>
+                            </label>
+                            <input id="account-number-cashOut" type="text" placeholder="Enter your number"
+                                class="input input-bordered" />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text  text-lg font-medium">Amount </span>
+                            </label>
+                            <input id="amount-to-cashOut" type="text" placeholder="Enter your Amount"
+                                class="input input-bordered"  />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text  text-lg font-medium">Pin Number</span>
+                            </label>
+                            <input id="pin-number-cashOut" type="password" placeholder="Enter 4 Digit Pin"
+                                class="input input-bordered"  autocomplete="off" />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-cashOut-money" class="btn bg-[#0874F2] text-white">Withdraw Money</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
 </body>
 
 </html>
