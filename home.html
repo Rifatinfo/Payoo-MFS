@@ -44,11 +44,11 @@
             <div class="mt-4">
                 <!-- icon cart -->
                 <div class="grid grid-cols-3 gap-3 px-1">
-                    <div class="border rounded-2xl text-center p-3">
+                    <div  id="btn-addMoney" class="border rounded-2xl text-center p-3">
                         <img class="w-14 h-14 mx-auto " src="img/transation (1).png" alt="">
                         <button class="text-sm font-semibold mt-2">Add Money</button>
                     </div>
-                    <div class="border rounded-2xl text-center p-3">
+                    <div  id="btn-CashOut" class="border rounded-2xl text-center p-3">
                         <img class="w-14 h-14 mx-auto " src="img/transation (2).png" alt="">
                         <button class="text-sm font-semibold mt-2">Cashout</button>
                     </div>
@@ -72,7 +72,7 @@
 
                 <!-- addMoney   -->
                  
-                <form class="hidden w-full text-center p-5">
+                <form id="addMoney-form" class="w-full text-center p-5">
                     <div>
                         <p class="text-2xl font-bold">Add Money</p>
                      </div>
@@ -113,7 +113,7 @@
                 </form>
 
                 <!-- cashOut -->
-                <form class="w-full text-center p-5">
+                <form id="cashOut-form" class="hidden w-full text-center p-5">
                     <div>
                         <p class="text-2xl font-bold">Cash Out</p>
                      </div>
@@ -149,6 +149,7 @@
     </main>
     <script src="js/home.js"></script>
     <script src="js/cashOut.js"></script>
+    <script src="js/route.js"></script>
 </body>
 
 </html>
