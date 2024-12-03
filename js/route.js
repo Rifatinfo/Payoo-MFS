@@ -18,3 +18,6 @@ document.getElementById('btn-addMoney').addEventListener('click', function(){
 document.getElementById('btn-CashOut').addEventListener('click', function(){
     showSectionById('cashOut-form');
 });
+document.getElementById('btn-Transaction').addEventListener('click', function(){
+    showSectionById('Transaction-History');
+})
