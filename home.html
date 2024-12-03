@@ -153,12 +153,20 @@
                     </div>
                     <!-- append Section  -->
                      <div id="trans-app-container">
-
+                      
                      </div>
+                    
                  </div>
             </div>
         </section>
     </main>
+    <script>
+         function updateDateTime() {
+        const now = new Date();
+        const currentDateTime = now.toLocaleString();
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+    </script>
     <!-- <script src="js/home.js"></script> -->
     <script src="js/utility.js"></script>
     <script src="js/addFun.js"></script>
